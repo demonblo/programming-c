@@ -1,0 +1,5 @@
+p file_name
+или
+s file_name
+
+file_name пустой
