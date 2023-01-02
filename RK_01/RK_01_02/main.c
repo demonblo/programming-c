@@ -41,7 +41,7 @@ int delete(int a[], int n)
 
 int main()
 {
-    int a[10], n, b, newN;
+    int a[10], n, b, new_n;
 
     printf("Введите размерность массива: ");
     if (scanf("%d", &n) != 1)
@@ -68,8 +68,8 @@ int main()
 
     printf("Исходный массив: ");
     output(a, n);
-    newN = delete(a, n);
+    new_n = delete(a, n);
     printf("Получившийся массива: ");
-    output(a, newN);
+    output(a, new_n);
     return 0;
 }

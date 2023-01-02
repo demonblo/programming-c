@@ -82,4 +82,31 @@
  3 вариант
  
  :)
+ 
+ ## 3 семестр
+ 
+ ### [8 лаба](https://github.com/demonblo/ProgrammingC/tree/main/Lab_08)
+ Массивы и [среднее кубическое](https://ru.wikipedia.org/wiki/Среднее_кубическое) модулей
+ 
+ ### [9 лаба](https://github.com/demonblo/ProgrammingC/tree/main/Lab_09)
+ Матрицы и работа с памятью
+ 
+ ### [10 лаба](https://github.com/demonblo/ProgrammingC/tree/main/Lab_10)
+ Таблицы, проверка даты, сортировка по ключу и удаление старых(определяется по условию) записей
+ 
+ ### [11 лаба](https://github.com/demonblo/ProgrammingC/tree/main/Lab_11)
+ [strlen](http://all-ht.ru/inf/prog/c/func/strlen.html), [strcat](http://all-ht.ru/inf/prog/c/func/strcat.html), [snprintf](https://learn.microsoft.com/ru-ru/cpp/c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l?view=msvc-170)
+ 
+ ### [12 лаба](https://github.com/demonblo/ProgrammingC/tree/main/Lab_12)
+ Списки, память и степени
+ 
+ ### [РК 1](https://github.com/demonblo/ProgrammingC/tree/main/RK_1)
+ 4 вариант
+ 
+ Структура с именем, фамилией и номером, необходимо вывести людей с подходящей фамилией
+ 
+ ### [РК 2](https://github.com/demonblo/ProgrammingC/tree/main/RK_2)
+ Тоже список, нужно вывести первоначальный список и список после удаления однофамильцев (`также необходимо чтобы dr memory не говорил что у вас утекла память, поэтому код надо подправить`)
+
+ 
 
