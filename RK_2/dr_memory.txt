@@ -1,0 +1,47 @@
+Dr. Memory version 2.2.0 build 1 built on Jul  1 2019 00:40:18
+Windows version: WinVer=102;Rel=1607;Build=14393;Edition=EnterpriseSN
+Dr. Memory results for pid 2916: "app.exe"
+Application cmdline: "C:\Users\user-lab01\Desktop\RK_32_2\app.exe"
+Recorded 117 suppression(s) from default C:\Program Files (x86)\Dr. Memory\bin64\suppress-default.txt
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x000000000065fb10-0x000000000065fb18 8 byte(s)
+# 0 .text                                   [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/pesect.c:230]
+# 1 _pei386_runtime_relocator               [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/pseudo-reloc.c:472]
+# 2 __tmainCRTStartup                       [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:285]
+# 3 .l_start                                [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:223]
+# 4 KERNEL32.dll!BaseThreadInitThunk       +0x13     (0x00007ffe9f4884d4 <KERNEL32.dll+0x84d4>)
+Note: @0:00:00.375 in thread 1500
+Note: 0x000000000065fb10 refers to 696 byte(s) beyond the top of the stack 0x000000000065fdc8
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #2: POSSIBLE LEAK 61 direct bytes 0x00000000017b01c0-0x00000000017b01fd + 0 indirect bytes
+# 0 replace_malloc                    [d:\drmemory_package\common\alloc_replace.c:2577]
+# 1 msvcrt.dll!malloc_crt
+# 2 msvcrt.dll!_setargv  
+# 3 msvcrt.dll!_getmainargs
+# 4 pre_cpp_init                      [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:173]
+# 5 msvcrt.dll!initterm  
+# 6 __tmainCRTStartup                 [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:275]
+# 7 .l_start                          [E:/mingwbuild/mingw-w64-crt-git/src/mingw-w64/mingw-w64-crt/crt/crtexe.c:223]
+# 8 KERNEL32.dll!BaseThreadInitThunk +0x13     (0x00007ffe9f4884d4 <KERNEL32.dll+0x84d4>)
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      1 unique,     2 total unaddressable access(es)
+      0 unique,     0 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      1 unique,     1 total,     61 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      4 unique,     4 total,   4172 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\user-lab01\AppData\Roaming\Dr. Memory\DrMemory-app.exe.2916.000\results.txt
